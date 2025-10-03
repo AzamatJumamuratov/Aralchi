@@ -22,7 +22,7 @@ const mockUser = {
 };
 
 const ProfilePage = () => {
-  const [user, setUser] = useState(mockUser);
+  const [user] = useState(mockUser);
   const [settings, setSettings] = useState(user.settings);
 
   // --- ЛОГИКА АВАТАРА ---
