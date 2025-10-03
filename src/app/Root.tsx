@@ -2,10 +2,13 @@
 
 import { createBrowserRouter, RouterProvider } from "react-router"; // react-router-dom
 import { useState, useEffect } from "react";
-import HomePage from "@/pages/HomePage";
+import HomePage from "@/pages/Home/HomePage";
 import Layout from "./Layout";
-import LeaderBoards from "@/pages/LeaderBoards";
-import WelcomeSurvey from "@/pages/WelcomeSurvey"; // 👈 Убедитесь, что этот компонент создан
+import LeaderBoards from "@/pages/LeaderBoardsPage";
+import WelcomeSurvey from "@/pages/WelcomeSurvey";
+import StatisticsPage from "@/pages/Statistics/StatisticsPage";
+import ConsultationsPage from "@/pages/Consultations/ConsultationPage";
+import ProfilePage from "@/pages/ProfilePage/ProfilePage";
 
 const Root = () => {
   // 1. Добавляем состояние и эффект для проверки localStorage
@@ -40,6 +43,18 @@ const Root = () => {
           path: "leaderBoards",
           Component: LeaderBoards,
         },
+        {
+          path: "statistics",
+          Component: StatisticsPage,
+        },
+        {
+          path: "consultations",
+          Component: ConsultationsPage,
+        },
+        {
+          path: "profile",
+          Component: ProfilePage,
+        },
       ],
     },
   ]);
@@ -55,7 +70,6 @@ const Root = () => {
     return <WelcomeSurvey onComplete={handleSurveyComplete} />;
   }
 
-  // Если не первый — показываем приложение с роутером
   return <RouterProvider router={router} />;
 };
 

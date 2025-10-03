@@ -3,7 +3,6 @@ import { NavLink } from "react-router";
 const Header = () => {
   return (
     <header className="w-full bg-white shadow-md sticky top-0 z-50">
-      {" "}
       <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Лого */}{" "}
         <div className="text-2xl font-bold text-brand-dark cursor-pointer">
@@ -38,7 +37,7 @@ const Header = () => {
           </NavLink>
 
           <NavLink
-            to="/stats"
+            to="/statistics"
             className={({ isActive }) =>
               `font-medium transition-colors ${
                 isActive
@@ -50,7 +49,7 @@ const Header = () => {
             Статистика
           </NavLink>
           <NavLink
-            to="/profile"
+            to="/consultations"
             className={({ isActive }) =>
               `font-medium transition-colors ${
                 isActive
