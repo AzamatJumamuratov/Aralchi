@@ -1,7 +1,7 @@
 // src/pages/ProfilePage.tsx
 
 import { useState } from "react";
-import { ShieldCheck, LogOut, User, Mail, Bell, Moon, Sun } from "lucide-react";
+import { ShieldCheck, LogOut, Bell, Moon, Sun } from "lucide-react";
 
 // --- ДАННЫЕ ПОЛЬЗОВАТЕЛЯ (временно здесь, потом будут приходить из API) ---
 const mockUser = {
