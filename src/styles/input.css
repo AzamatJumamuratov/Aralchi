@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #10b981; /* основной зелёный */
+  --color-brand-light: #a7f3d0;
+  --color-brand-dark: #047857;
+
+  --color-accent: #1e3a8a; /* акцентный синий */
+}
