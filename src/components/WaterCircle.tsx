@@ -1,9 +1,4 @@
-import React, {
-  useState,
-  useImperativeHandle,
-  forwardRef,
-  useEffect,
-} from "react";
+import { useState, useImperativeHandle, forwardRef, useEffect } from "react";
 import LiquidGauge from "react-liquid-gauge"; // Corrected main import
 
 // 1. УДАЛИТЬ НЕПРАВИЛЬНЫЙ ИМПОРТ:
